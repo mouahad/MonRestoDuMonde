@@ -16,7 +16,7 @@ class ALacarteController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "A la Carte"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

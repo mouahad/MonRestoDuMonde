@@ -7,15 +7,66 @@
 //
 
 import UIKit
+// on va utiliser les protocoles(delegate,datasource et le flowLayout) qui vont etre fait uniquement sur un view controleur ou de ces heritage
+// UICollectionViewDelegateFlowLayout =  permet de mettre en forme chacune de cellule (collectionviewcell)
 
-class MenuController: UIViewController {
 
+// casté ???
+
+class MenuController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    let cellID = "MenuCell"
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Les Menus du monde"
+        collectionView.delegate = self
+        collectionView.dataSource = self
 
     }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    } // nombre d'éléments par section
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as? MenuCell {
+            cell.backgroundColor = GRIS_TRES_FONCE
+            return cell
+        }
+    return UICollectionViewCell()
+                            // Identification de la cellule et Font(format,color,..)de la cellule
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let largeur = collectionView.frame.width / 2 - 10// on recupère la largeur total et ensuite on la adivise par 2
+        return CGSize(width: largeur, height: 200)
+                            // Taille de la cellule
+    }
 
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 50
+                            // Espace entre "les lignes"
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10            // Espace entre "les colonnes"
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
