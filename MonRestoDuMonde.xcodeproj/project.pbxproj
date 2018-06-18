@@ -18,6 +18,8 @@
 		0316DDFD20D7C834001FAD4E /* Constante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DDFC20D7C834001FAD4E /* Constante.swift */; };
 		0316DDFF20D7CBC1001FAD4E /* MonNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DDFE20D7CBC1001FAD4E /* MonNav.swift */; };
 		0316DE0320D7E128001FAD4E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DE0220D7E128001FAD4E /* MenuCell.swift */; };
+		0316DE0520D7E872001FAD4E /* Plat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DE0420D7E872001FAD4E /* Plat.swift */; };
+		0316DE0720D7E8AA001FAD4E /* Enume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DE0620D7E8AA001FAD4E /* Enume.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		0316DDFC20D7C834001FAD4E /* Constante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constante.swift; sourceTree = "<group>"; };
 		0316DDFE20D7CBC1001FAD4E /* MonNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonNav.swift; sourceTree = "<group>"; };
 		0316DE0220D7E128001FAD4E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		0316DE0420D7E872001FAD4E /* Plat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plat.swift; sourceTree = "<group>"; };
+		0316DE0620D7E8AA001FAD4E /* Enume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enume.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		0316DDEE20D7BDDD001FAD4E /* Modele */ = {
 			isa = PBXGroup;
 			children = (
+				0316DE0420D7E872001FAD4E /* Plat.swift */,
+				0316DE0620D7E8AA001FAD4E /* Enume.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -190,8 +196,10 @@
 				0316DDDF20D7AB3F001FAD4E /* ViewController.swift in Sources */,
 				0316DDFD20D7C834001FAD4E /* Constante.swift in Sources */,
 				0316DDF220D7BF1B001FAD4E /* MenuController.swift in Sources */,
+				0316DE0520D7E872001FAD4E /* Plat.swift in Sources */,
 				0316DDDD20D7AB3F001FAD4E /* AppDelegate.swift in Sources */,
 				0316DE0320D7E128001FAD4E /* MenuCell.swift in Sources */,
+				0316DE0720D7E8AA001FAD4E /* Enume.swift in Sources */,
 				0316DDFF20D7CBC1001FAD4E /* MonNav.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
