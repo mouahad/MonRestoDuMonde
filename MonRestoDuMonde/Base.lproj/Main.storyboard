@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -145,13 +146,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZHM-dF-zph">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlatCell" rowHeight="145" id="ZHM-dF-zph" customClass="PlatCell" customModule="MonRestoDuMonde" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="145"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZHM-dF-zph" id="Nh1-zw-qkR">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wN6-RM-EVO">
+                                            <rect key="frame" x="10" y="22" width="128" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="e8j-8T-zlv"/>
+                                                <constraint firstAttribute="width" constant="128" id="tUg-0H-CRL"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRT-tz-fCD">
+                                            <rect key="frame" x="146" y="22" width="213" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="K8f-Wy-ekR"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lRT-tz-fCD" firstAttribute="trailing" secondItem="Nh1-zw-qkR" secondAttribute="trailingMargin" id="1fX-Pb-FVT"/>
+                                        <constraint firstItem="wN6-RM-EVO" firstAttribute="centerY" secondItem="Nh1-zw-qkR" secondAttribute="centerY" id="5Rl-fj-qFN"/>
+                                        <constraint firstItem="wN6-RM-EVO" firstAttribute="leading" secondItem="Nh1-zw-qkR" secondAttribute="leading" constant="10" id="NVM-br-FXW"/>
+                                        <constraint firstItem="lRT-tz-fCD" firstAttribute="leading" secondItem="wN6-RM-EVO" secondAttribute="trailing" constant="8" id="euB-Ed-9Mn"/>
+                                        <constraint firstItem="lRT-tz-fCD" firstAttribute="centerY" secondItem="Nh1-zw-qkR" secondAttribute="centerY" id="lZY-TO-WO7"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descDuPlat" destination="lRT-tz-fCD" id="Tus-xg-I7A"/>
+                                    <outlet property="imageDuplat" destination="wN6-RM-EVO" id="wal-W5-K0C"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -163,7 +193,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zS-Dy-3ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="519"/>
+            <point key="canvasLocation" x="1308" y="517.6911544227886"/>
         </scene>
         <!--A la carte-->
         <scene sceneID="mRd-Ip-Ejc">
