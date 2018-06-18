@@ -27,6 +27,11 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
         title = "Les Menus du monde"
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        let vue = UIView(frame: collectionView.bounds)
+        vue.layer.addSublayer(Degrade())                    // inserer le dégrader en fond
+        collectionView.backgroundView = vue
+        
         menus = LesPlats.obtenir.lesMenus()
         collectionView.reloadData() // Pour etre sur que l'on recharge bien les bonnes données
     }

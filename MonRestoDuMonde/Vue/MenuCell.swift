@@ -22,7 +22,8 @@ class MenuCell: UICollectionViewCell {
         self.menu = menu
         vue.layer.cornerRadius = 10             // Arrondir les bords
         vue.layer.borderColor = NOIR.cgColor        //couleur de la bordur
-        vue.layer.borderWidth = 4               //épaisseur de la bordur
+        vue.layer.borderWidth = 1               //épaisseur de la bordur
+        vue.backgroundColor = UIColor.white
         
         imageDuMenu.image = self.menu.image         // ajout de l'image
         imageDuMenu.contentMode = .scaleAspectFill      //l'aspect de l'image
