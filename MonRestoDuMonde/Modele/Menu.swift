@@ -28,7 +28,7 @@ class Menu {
         return _plats
     }
     
-    init(pays: String, image: UIImage) {            // initialisation avec parametre
+    init(pays: String, image: UIImage) {  // initialisation avec parametre
         self._pays = pays
         self._image = image
         self._plats = [Plat]()

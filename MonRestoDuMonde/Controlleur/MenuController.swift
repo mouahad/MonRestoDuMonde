@@ -35,8 +35,10 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     } // nombre d'éléments par section
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let menu = menus[indexPath.item]
         if let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as? MenuCell {
-            cell.backgroundColor = GRIS_TRES_FONCE
+            cell.miseEnPlace(menu: menu)
+            //cell.backgroundColor = GRIS_TRES_FONCE
             return cell
         }
     return UICollectionViewCell()
