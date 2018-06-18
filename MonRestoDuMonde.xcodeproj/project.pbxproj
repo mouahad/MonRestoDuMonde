@@ -20,6 +20,8 @@
 		0316DE0320D7E128001FAD4E /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DE0220D7E128001FAD4E /* MenuCell.swift */; };
 		0316DE0520D7E872001FAD4E /* Plat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DE0420D7E872001FAD4E /* Plat.swift */; };
 		0316DE0720D7E8AA001FAD4E /* Enume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DE0620D7E8AA001FAD4E /* Enume.swift */; };
+		0316DE0920D7ECB0001FAD4E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DE0820D7ECB0001FAD4E /* Menu.swift */; };
+		0316DE0B20D7EE84001FAD4E /* LesPlats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DE0A20D7EE84001FAD4E /* LesPlats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		0316DE0220D7E128001FAD4E /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		0316DE0420D7E872001FAD4E /* Plat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plat.swift; sourceTree = "<group>"; };
 		0316DE0620D7E8AA001FAD4E /* Enume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enume.swift; sourceTree = "<group>"; };
+		0316DE0820D7ECB0001FAD4E /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		0316DE0A20D7EE84001FAD4E /* LesPlats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LesPlats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			children = (
 				0316DE0420D7E872001FAD4E /* Plat.swift */,
 				0316DE0620D7E8AA001FAD4E /* Enume.swift */,
+				0316DE0820D7ECB0001FAD4E /* Menu.swift */,
+				0316DE0A20D7EE84001FAD4E /* LesPlats.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -192,10 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0316DDFA20D7C779001FAD4E /* MonTabBar.swift in Sources */,
+				0316DE0B20D7EE84001FAD4E /* LesPlats.swift in Sources */,
 				0316DDF420D7BF84001FAD4E /* ALacarteController.swift in Sources */,
 				0316DDDF20D7AB3F001FAD4E /* ViewController.swift in Sources */,
 				0316DDFD20D7C834001FAD4E /* Constante.swift in Sources */,
 				0316DDF220D7BF1B001FAD4E /* MenuController.swift in Sources */,
+				0316DE0920D7ECB0001FAD4E /* Menu.swift in Sources */,
 				0316DE0520D7E872001FAD4E /* Plat.swift in Sources */,
 				0316DDDD20D7AB3F001FAD4E /* AppDelegate.swift in Sources */,
 				0316DE0320D7E128001FAD4E /* MenuCell.swift in Sources */,
