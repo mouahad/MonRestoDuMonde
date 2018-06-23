@@ -94,11 +94,41 @@
                     <navigationItem key="navigationItem" id="1d8-oZ-gdt"/>
                     <connections>
                         <outlet property="collectionView" destination="pSm-Dc-dxp" id="raK-OK-ETd"/>
+                        <segue destination="xR3-ve-5L8" kind="show" identifier="VersDetail" id="BAG-Sq-7J1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daj-K2-ExH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1308" y="-192.05397301349328"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="qGc-nG-Crv">
+            <objects>
+                <viewController id="xR3-ve-5L8" customClass="DetailController" customModule="MonRestoDuMonde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UfQ-Wj-oWN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIO-y4-hh4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UIO-y4-hh4" firstAttribute="trailing" secondItem="7Tb-3u-S9Q" secondAttribute="trailing" id="QKi-NL-ubq"/>
+                            <constraint firstItem="UIO-y4-hh4" firstAttribute="bottom" secondItem="7Tb-3u-S9Q" secondAttribute="bottom" id="bDB-Rj-AEV"/>
+                            <constraint firstItem="UIO-y4-hh4" firstAttribute="top" secondItem="7Tb-3u-S9Q" secondAttribute="top" id="lvn-wY-S9q"/>
+                            <constraint firstItem="UIO-y4-hh4" firstAttribute="leading" secondItem="7Tb-3u-S9Q" secondAttribute="leading" id="yeB-jf-1TN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Tb-3u-S9Q"/>
+                    </view>
+                    <connections>
+                        <outlet property="scroll" destination="UIO-y4-hh4" id="OB0-g8-UkH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXR-gt-Jg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096.8000000000002" y="-194.75262368815595"/>
         </scene>
         <!--Mon Tab Bar-->
         <scene sceneID="zff-Q3-ZYO">
