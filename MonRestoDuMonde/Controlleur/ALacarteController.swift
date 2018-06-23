@@ -25,12 +25,18 @@ class ALacarteController: UITableViewController {
         super.viewDidLoad()
         title = "A la Carte"
         
+        
+        let vue =  UIView(frame: tableView.bounds)
+        vue.layer.addSublayer(Degrade())
+        
+        tableView.backgroundView = vue
+        tousLesPlats = LesPlats.obtenir.carteComplete()
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        // Nombre de section
         return tousLesPlats.count
     }
 
@@ -50,5 +56,19 @@ class ALacarteController: UITableViewController {
         return UITableViewCell()
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130  // largeur des sections
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let typeDePlat = tousLesPlats[section].type
+        
+        switch typeDePlat {
+        case .entree: return "Nos Entrées"
+        case .platPrincipal: return "Nos plats principaux"
+        case .dessert: return "Le coin des Gourmands"
+        }                   // Donnée un titre par grouge de section
+    }
+ 
 
 }
