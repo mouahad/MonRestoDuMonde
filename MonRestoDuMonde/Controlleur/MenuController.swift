@@ -73,7 +73,7 @@ class MenuController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueID {
             if let detail = segue.destination as? DetailController {
-                detail.menu = sender as? Menu           // ??????????????
+                detail.menu = sender as? Menu           // la ou on programme la vue affichée
             }
         }
     }

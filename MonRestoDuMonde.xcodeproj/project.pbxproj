@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0311829920E2EB4C00939FC4 /* PlatVue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0311829820E2EB4C00939FC4 /* PlatVue.swift */; };
 		0316DDDD20D7AB3F001FAD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DDDC20D7AB3F001FAD4E /* AppDelegate.swift */; };
 		0316DDDF20D7AB3F001FAD4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0316DDDE20D7AB3F001FAD4E /* ViewController.swift */; };
 		0316DDE220D7AB3F001FAD4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0316DDE020D7AB3F001FAD4E /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0311829820E2EB4C00939FC4 /* PlatVue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatVue.swift; sourceTree = "<group>"; };
 		0316DDD920D7AB3F001FAD4E /* MonRestoDuMonde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonRestoDuMonde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0316DDDC20D7AB3F001FAD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0316DDDE20D7AB3F001FAD4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				0316DE0220D7E128001FAD4E /* MenuCell.swift */,
 				036C43B920D85BE00019B3B4 /* Degrade.swift */,
 				036C43BB20D864240019B3B4 /* PlatCell.swift */,
+				0311829820E2EB4C00939FC4 /* PlatVue.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				036C43BC20D864240019B3B4 /* PlatCell.swift in Sources */,
+				0311829920E2EB4C00939FC4 /* PlatVue.swift in Sources */,
 				0316DDFA20D7C779001FAD4E /* MonTabBar.swift in Sources */,
 				0316DE0B20D7EE84001FAD4E /* LesPlats.swift in Sources */,
 				0316DDF420D7BF84001FAD4E /* ALacarteController.swift in Sources */,

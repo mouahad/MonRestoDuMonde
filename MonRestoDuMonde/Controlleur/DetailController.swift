@@ -26,7 +26,34 @@ class DetailController: UIViewController {
     }
 
     func miseEnPlace (menu: Menu) {
-        print ("Ca marche on a le menu: \(menu.pays)")
+        //print ("Ca marche on a le menu: \(menu.pays)")
+        let imageDumenu = UIImageView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 250))
+        imageDumenu.image = menu.image
+        imageDumenu.contentMode = .scaleAspectFill
+        imageDumenu.clipsToBounds = true
+        scroll.addSubview(imageDumenu)
+        var maxY = imageDumenu.frame.maxY
+        
+        
+        let nomDumenu = UILabel(frame: CGRect(x: 0, y: maxY, width: view.frame.width, height: 100))
+        nomDumenu.text = "Menu " + menu.pays
+        nomDumenu.font = FONT_TITRE
+        nomDumenu.textColor = .blue
+        nomDumenu.adjustsFontSizeToFitWidth = true
+        nomDumenu.textAlignment = .center
+        scroll.addSubview(nomDumenu)
+        maxY = nomDumenu.frame.maxY
+        
+        for plat in menu.plats {
+            let vue = PlatVue(frame: CGRect(x: 0, y: maxY, width: view.frame.width, height: 375))
+            vue.miseEnPlace(plat: plat)
+            scroll.addSubview(vue)
+            maxY = vue.frame.maxY
+        }
+        
+        scroll.contentSize = CGSize(width: view.frame.width, height: maxY + 50)
+        
+        
     }
     
 }
