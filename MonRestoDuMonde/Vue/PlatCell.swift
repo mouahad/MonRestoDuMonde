@@ -16,8 +16,8 @@ class PlatCell: UITableViewCell {
     
     var plat: Plat!
     
-    func miseEnPlace(plat: Plat) {
-        self.plat = plat
+    func miseEnPlace(plat1: Plat) {
+        self.plat = plat1
         
         
         imageDuplat.image = self.plat.image
@@ -33,10 +33,6 @@ class PlatCell: UITableViewCell {
         
     
     }
-    
-    
-    
-    
     
     
     

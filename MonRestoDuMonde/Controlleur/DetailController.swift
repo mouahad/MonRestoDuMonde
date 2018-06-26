@@ -17,10 +17,10 @@ class DetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.layer.addSublayer(Degrade())
+        view.layer.addSublayer(Degrade())          // ajouter du "dégrader créée" en background
         view.bringSubview(toFront: scroll)  // la "vue" scroll passe en vue prioritaire sue le "layer"
         
-        guard menu != nil else {return}   //vérifie que "menu" ne soit pas vide/nul ou nil
+        guard menu != nil else {return}   //vérifie que "menu" ne soit pas vide/nul ou nil et return si c'est le cas
         miseEnPlace(menu: menu!)
         
     }

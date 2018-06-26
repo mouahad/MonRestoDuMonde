@@ -10,7 +10,7 @@ import UIKit
 
 
 class Plat {
-    private var _type: Type
+    private var _type: Type                 // Type -> entre, plat, dessert
     private var _pays: String
     private var _desc: String
     private var _image: UIImage

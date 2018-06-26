@@ -42,14 +42,14 @@ class ALacarteController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return tousLesPlats[section].plats.count
+        return tousLesPlats[section].plats.count            //?????
     }
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let plat = tousLesPlats[indexPath.section].plats[indexPath.row]
         if  let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as? PlatCell {
-            cell.miseEnPlace(plat: plat)
+            cell.miseEnPlace(plat1: plat)                   //?????
             return cell
         }
     

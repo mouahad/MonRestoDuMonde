@@ -24,7 +24,7 @@ class Menu {
         return _image
     }
     
-    var plats: [Plat] {
+    var plats: [Plat] {             // Plat -> (type = entree, plat, desert), pays, desc, image
         return _plats
     }
     

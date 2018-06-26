@@ -10,7 +10,7 @@ import UIKit
 
 class LesPlats {
     
-    static let obtenir = LesPlats()
+    static let obtenir = LesPlats()         // appel/accede aux fonctions de la class
     
     func lesMenus() -> [Menu] {
         var menus = [Menu]()
@@ -59,7 +59,7 @@ class LesPlats {
     }
     
     
-    func toutLesPlats() -> [Plat] {
+    func toutLesPlats() -> [Plat] {     // -> Liste de tous les plats
         var lesPlats = [Plat]()
         
         let tomate = Plat(type: .entree, pays: ITALIE, desc: "Salade de tomates et Mozzarella", image: #imageLiteral(resourceName: "mozza"))
